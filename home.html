@@ -1,8 +1,9 @@
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
+        <link rel="icon" href="images/images.png" type="image/x-icon" style="height:30px">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
             a:link
             {color:rgb(18, 162, 162);
              background-color: transparent;
@@ -20,114 +21,255 @@
             background-color:transparent;
             text-decoration:underline;
             }
-            </style>
-        <body style="background-color:rgb(40, 38, 38);" >
-            <div style="background-color: rgb(243, 80, 10); color:rgb(0, 0, 0); padding: 5px; margin-left:-20px; margin-right:-20px; margin-top:-30px">
-            <div style="margin-left:1375px; margin-top:30px; font-family:'Courier New', monospace; font-size: 200%;"><b><i>BAKA</i></b></div>
-            <div style="margin-left:1250px ; margin-top:-50px">
-            <img src="images/8-Gokus-Kai.jpg"; height="60px";> </div></div>
-            <br>
-            <br>
-            
-            <div style="margin-left:55px;margin-top:-84px; font-family:cursive; font-size:120%;"><a href="index.html" style="color:black; text-decoration:none;"><b>Home</b></a></div>
-            <div style="margin-left:155px;margin-top:-27px; font-family:cursive; font-size:120%;"><a href="webiste.html" style="color:black; text-decoration:none;"><b>Introduction</b></a></div>
-            <div style="margin-left:300px;margin-top:-27px; font-family:cursive; font-size:120%;"><a href="news.html" style="color:black; text-decoration:none;"><b>News</b></a></div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div style="margin-left:50px;font-size:220%; color:white; font-family: cursive;">Browse</div>
-            <br>
-            <br>
-        <div style="margin-left:50px; font-size:150%;color:white; font-family: cursive";><b>Most Popular Anime</b></div>
-        <br>
-        <div style="margin-left:50px">
-            <a href="https://www.netflix.com/in/title/81091393" target="_blank"><img src="images/Demon Slayer.jpg">
-            <div style="font-size:100%; font-family:cursive; margin-left:100px;">Demon Slayer</div></a>
-        </div>
-        <div style="margin-left:375px; margin-top:-188px;">
-            <a href="https://www.netflix.com/in/title/80117291" target="_blank"><img src="images/One Punch Man.jpg">
-            <div style="font-size:100%; font-family:cursive; margin-left:100px;">One Punch Man</div></a>
-        </div>
-        <div style="margin-left:700px; margin-top:-188px;">
-            <a href="https://www.netflix.com/in/title/80995578" target="_blank"><img src="images/Hajime no Ippo The Fighting.jpg">
-            <div style="font-size:100%; font-family:cursive; margin-left:50px;">Hajime no Ippo:The Fighting</div></a>
-        </div>
-        <div style="margin-left:1025px; margin-top:-188px;">
-            <a href="https://www.netflix.com/in/title/70205012" target="_blank"><img src="images/Naruto.jpg">
-            <div style="font-size:100%; font-family:cursive; margin-left:130px;">Naruto</div></a>
-        </div>
+body {
+    font-family: cursive;
+    background-color:rgb(40, 38, 38) ;
+  }
+.topnav {
+    position:relative;
+    overflow:hidden;
+    width: 100%;
+    background-color:rgb(243, 80, 10);
+    color:rgb(0, 0, 0);
+    z-index:999;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    background-color:rgb(243, 80, 10);
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative; 
+    transition: all 300ms;
+  }
+  img {
+max-width: 100%;
+}
+.topnav a::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 5%; 
+        bottom:10%;
+        left: 0;
+        background-color: black; 
+        transition: all 0.3s; 
+    }
+.topnav a:hover::after {
+        margin-left:12%;
+        width: 75%; 
+    }
+  .topnav a:hover {
+    background-color: rgb(243, 80, 10);
+    color: black;
+  }
+  
+  .topnav .icon {
+    float: left;
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: left;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+hmtl{
+  scroll-behavior:smooth;
+ 
 
-        <br>
-        <br>
-        <div style="margin-left:50px; font-size:150%;color:white; font-family: cursive";><b>Bingeworthy TV Shows</b></div>
-        <br>
-        <div style="margin-left:50px">
-            <a href="https://www.netflix.com/in/title/80204451" target="_blank"><img src="images/baki.jpg">
-            <div style="font-size:100%; font-family:cursive; margin-left:120px;">BAKI</div></a>
-        </div>
-        <div style="margin-left:375px; margin-top:-188px;">
-            <a href="https://www.netflix.com/in/title/70204970" target="_blank"><img src="images/death note.jpg">
-            <div style="font-size:100%;font-family:cursive; margin-left:100px;">Death Note</div></a>
-        </div>
-        <div style="margin-left:700px; margin-top:-188px;">
-            <a href="https://www.netflix.com/in/title/80179831" target="_blank"><img src="images/Jojo.jpg">
-            <div style="font-size:100%; font-family:cursive; margin-left:50px;">Jojo's Bizarre Adventure</div></a>
-        </div>
-        <div style="margin-left:1025px; margin-top:-188px;">
-            <a href="https://www.netflix.com/in/title/81215627" target="_blank"><img src="images/chainsaw man.jpg">
-            <div style="font-size:100%; font-family:cursive; margin-left:80px;">Chainsaw Man</div></a>
-        </div>
+}
+.wrapper{
+  display:grid;
+  grid-template-columns: repeat(3,100%);
+  overflow:hidden;
+  scroll-behavior:smooth;
+  z-index:-1
+}
+.wrapper section{
+  width:100%;
+  position:relative;
+  display:grid;
+  grid-template-columns: repeat(5,auto);
+  margin:20px 0;
+  
+}
+.wrapper section .item{
+  padding:0 2px;
+  transition:250ms all;
+  
+}
+.wrapper section a{
+  position:absolute;
+  color:#fff;
+  text-decoration:none;
+  font-size:6em;
+  background:black;
+  width:80px;
+  padding:20px;
+  text-align:center;
+  z-index:1;
+}
+.wrapper section a:nth-of-type(1) {
+ top: 0;
+ bottom: 0;
+ left: 0;
+ background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+ 
+}
+.wrapper section a:nth-of-type(2) {
+ top: 0;
+ bottom: 0;
+ right: 0;
+ background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+}
 
-        <br>
-        <br>
-        <div style="margin-left:50px; font-size:150%;color:white; font-family: cursive";><b>Anime For Beginners</b></div>
-        <br>
-        <div style="margin-left:50px">
-            <a href="https://www.netflix.com/in/title/80231373" target="_blank"><img src="images/utltraman.jpg">
-            <div style="font-size:100%; font-family:cursive; margin-left:100px;">Ultraman</div></a>
-        </div>
-        <div style="margin-left:375px; margin-top:-188px;">
-            <a href="https://www.netflix.com/in/title/81223075" target="_blank"><img src="images/pokemon.jpg">
-            <div style="font-size:100%; font-family:cursive; margin-left:100px;">Pokemon</div></a>
-        </div>
-        <div style="margin-left:700px; margin-top:-188px;">
-            <a href="https://www.netflix.com/in/title/81278456" target="_blank"><img src="images/jijutsu Kaisen.jpg">
-            <div style="font-size:100%; font-family:cursive; margin-left:100px;">Jijutzu Kaisen</div></a>
-        </div>
-        <div style="margin-left:1025px; margin-top:-188px;">
-            <a href="https://www.netflix.com/in/title/70106454" target="_blank"><img src="images/ponyo.jpg">
-            <div style="font-size:100%; font-family:cursive; margin-left:100px;">Ponyo</div></a>
-        </div>
+@media only screen and (max-width: 600px) {
+ a.arrow__btn {
+ display: none;
+ }
+}
+</style>
+<body>
+    
 
-        <br>
-        <br>
-        <div style="margin-left:50px; font-size:150%;color:white; font-family: cursive";><b>Futuristic Anime</b></div>
-        <br>
-        <div style="margin-left:50px">
-            <a href="https://www.netflix.com/in/title/81002003" target="_blank"><img src="images/pacific rim.jpg">
-            <div style="font-size:100%; font-family:cursive; margin-left:100px;">Pacific Rim</div></a>
-        </div>
-        <div style="margin-left:375px; margin-top:-188px;">
-            <a href="https://www.netflix.com/in/title/80150290" target="_blank"><img src="images/Orphans.jpg">
-            <div style="font-size:100%; font-family:cursive; margin-left:75px;">Mobile Suit Gundum</div></a>
-        </div>
-        <div style="margin-left:700px; margin-top:-188px;">
-            <a href="https://www.netflix.com/in/title/81054853" target="_blank"><img src="images/cyberpunk.jpg">
-            <div style="font-size:100%; font-family:cursive; margin-left:50px;">Cyberpunk: Edgerunners</div></a>
-        </div>
-        <div style="margin-left:1025px; margin-top:-188px;">
-            <a href="https://www.netflix.com/in/title/81033445" target="_blank"><img src="images/Neon.jpg">
-            <div style="font-size:100%; font-family:cursive; margin-left:100px;">Neon Genesis</div></a>
-        </div>
-        <br>
-        <br>
-        <br>
+    <div class="topnav" id="myTopnav" style="margin-top:-0.5%; margin-left:-0.5%; position:fixed">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html" style="color:black; text-decoration:none;"><b>Home</b></a>
+        <a href="home.html" style="color:black; text-decoration:none;"><b>Browse</b></a>
+        <a href="webiste.html" style="color:black; text-decoration:none;"><b>Introduction</b></a>
+        <a href="news.html" style="color:black; text-decoration:none;"><b>News</b></a>
+      </div>
+      <div style="margin-left:80%; margin-top:0.25%; font-family:'Courier New', monospace; font-size: 150%; position:absolute;"><b><i>BAKA</i></b></div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div style="margin-left:3%;font-size:220%; color:white; font-family: cursive;">Browse</div>
+
+        <div style="margin-left:3%; margin-top:1%; font-size:150%;color:white; font-family: cursive";><b>Most Popular Anime</b></div>
+
+        <div class="wrapper" style="margin-left:2%;" >
+          <section id="section1">
+          <a href="#section3" class="arrow__btn">‹</a>
+          <div class="item"><img src="images/Demon Slayer.webp"></div>
+          <div class="item"><img src="images/One Punch Man.webp"></div>
+          <div class="item"><img src="images/Hajime no Ippo The Fighting.webp"></div>
+          <div class="item"><img src="images/Naruto.webp"></div>
+
+
+          <a href="#section2" class="arrow__btn">›</a>
+        </section>
+        <section id="section2">
+          <a href="#section1" class="arrow__btn">‹</a>
+          <div class="item"><img src="images/pokemon.webp"></div>
+          <div class="item"><img src="images/Neon.webp"></div>
+          <div class="item"><img src="images/Jojo.webp"></div>
+          <div class="item"><img src="images/ponyo.webp"></div>
+</section>
+</div>
+
+
+<div style="margin-left:3%; margin-top:1%; font-size:150%;color:white; font-family: cursive";><b>BingeWorthy TV Shows</b></div>
+<div class="wrapper" style="margin-left:2%;">
+  <section id="section4">
+  <a href="#section6" class="arrow__btn">‹</a>
+  <div class="item"><img src="images/baki.webp"></div>
+  <div class="item"><img src="images/death note.webp"></div>
+  <div class="item"><img src="images/Jojo.webp"></div>
+  <div class="item"><img src="images/chainsaw man.webp"></div>
+
+
+  <a href="#section5" class="arrow__btn">›</a>
+</section>
+<section id="section5">
+  <a href="#section4" class="arrow__btn">‹</a>
+  <div class="item"><img src="images/One Punch Man.webp"></div>
+  <div class="item"><img src="images/jijutsu Kaisen.webp"></div>
+  <div class="item"><img src="images/cyberpunk.webp"></div>
+  <div class="item"><img src="images/Hajime no Ippo The Fighting.webp"></div>
+</section>
+</div>
+
+<div style="margin-left:3%; margin-top:1%; font-size:150%;color:white; font-family: cursive";><b>Anime for Beginners</b></div>
+<div class="wrapper" style="margin-left:2%">
+  <section id="section8">
+  <a href="#section7" class="arrow__btn">‹</a>
+  <div class="item"><img src="images/utltraman.webp"></div>
+  <div class="item"><img src="images/pokemon.webp"></div>
+  <div class="item"><img src="images/jijutsu Kaisen.webp"></div>
+  <div class="item"><img src="images/ponyo.webp"></div>
+
+
+  <a href="#section9" class="arrow__btn">›</a>
+</section>
+<section id="section9">
+  <a href="#section8" class="arrow__btn">‹</a>
+  <div class="item"><img src="images/Orphans.webp"></div>
+  <div class="item"><img src="images/naruto.webp"></div>
+  <div class="item"><img src="images/baki.webp"></div>
+  <div class="item"><img src="images/pacific rim.webp"></div>
+</section>
+</div>
+
+<div style="margin-left:3%; margin-top:1%; font-size:150%;color:white; font-family: cursive";><b>Futuristic Anime</b></div>
+<div class="wrapper" style="margin-left:2%">
+  <section id="section10">
+  <a href="#section11" class="arrow__btn">‹</a>
+  <div class="item"><img src="images/Kengan Ashura.webp"></div>
+  <div class="item"><img src="images/Orphans.webp"></div>
+  <div class="item"><img src="images/cyberpunk.webp"></div>
+  <div class="item"><img src="images/neon.webp"></div>
+
+
+  <a href="#section12" class="arrow__btn">›</a>
+</section>
+<section id="section12">
+  <a href="#section10" class="arrow__btn">‹</a>
+  <div class="item"><img src="images/Demon Slayer.webp"></div>
+  <div class="item"><img src="images/chainsaw man.webp"></div>
+  <div class="item"><img src="images/death note.webp"></div>
+  <div class="item"><img src="images/utltraman.webp"></div>
+</section>
+</div>
+
         <div style="font-size:200%;color:white; font-family: cursive; text-align:center";><b>There’s even more to watch.</b></div>
-        <div style="margin-left:100px; margin-right:100px; font-size:150%;color:white; font-family: cursive; text-align:center";>
+        <div style="margin-left:3%; margin-right:3%; font-size:150%;color:white; font-family: cursive; text-align:center";>
             Baka has an extensive recommadation of animes for you. Search as much as you want, anytime you want. Press Ctrl+D to get bookmarked.</div>
         <br>
         <br>
         <br>
+        
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+          </script>
     </head>
 </html>
