@@ -334,23 +334,23 @@ max-width: 100%;
                                 <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
                                 <div class="text"  >
                                     <h3 style="color:#00bcd4">Email</h3>
-                                    <p style="color:white">baka3455@gmail.com</p>
+                                    <p style="color:white">baka78526@outlook.com</p>
                                 </div>
                             </div>  
                 </div>
                 <div class="contactForm" >
-                    <form>
+                    <form onsubmit="sendEmail(), reset(); return false;">
                         <h2>Send Message</h2>
                         <div class="inputBox">
-                            <input type="text" name="" required="required">
+                            <input type="text" id="name" name=""  required="required">
                             <span>Full Name</span>
                         </div>
                         <div class="inputBox">
-                            <input type="text" name="" required="required">
+                            <input type="text" id="email" name="" required="required">
                             <span>Email</span>
                         </div>
                         <div class="inputBox">
-                            <textarea required="required"></textarea>
+                            <textarea required="required" id="message"></textarea>
                             <span>Type your Message...</span>
                         </div>
                         <div class="input box">
@@ -360,6 +360,7 @@ max-width: 100%;
                 </div>
             </div>
           </section>
+          <script src="https://smtpjs.com/v3/smtp.js"></script>
           <script>
             function myFunction() {
               var x = document.getElementById("myTopnav");
@@ -368,6 +369,19 @@ max-width: 100%;
               } else {
                 x.className = "topnav";
               }
+            }
+            function sendEmail(){
+              Email.send({
+              SecureToken:"94596e07-239f-41f6-9152-bbf59a4e058e",
+              To: 'baka78526@outlook.com',
+              From :document.getElementById("email").value,
+              Subject : "This is the subject",
+              Body : "Name:"+ document.getElementById("name").value
+                    +"<br> Email:"+ document.getElementById("email").value
+                    +"<br> Message:"+ document.getElementById("message").value
+              }).then(
+               message => alert(message)
+               );
             }
             </script>
           </body>
